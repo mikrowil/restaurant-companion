@@ -13,7 +13,7 @@ require_once('inc/Config.php');
  * If so, the user is redirected to the home page.
  */
 if (LoginUtilities::verifyLogin()) {
-    header("Location: App.php");
+    header("Location: Index.php");
 }
 
 //Checks the action for when a user enters login details.
@@ -32,7 +32,7 @@ if (isset($_POST["action"]) && $_POST["action"] == "login") {
         $_SESSION["username"] = $_POST["username"];
 
         //Open home for user
-        header("Location: App.php");
+        header("Location: index.php");
     } else {
         $message = "Could not login";
         echo "<script type='text/javascript'>alert('$message');</script>";

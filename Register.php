@@ -33,7 +33,7 @@ if(isset($_POST["action"]) && $_POST["action"] == "add"){
 
             $_SESSION["loggedIn"] = true;
             $_SESSION["username"] = $_POST["username"];
-            header("Location: App.php");
+            header("Location: index.php");
         }else{
             $message = "That username is taken";
             echo "<script type='text/javascript'>alert('$message');</script>";

@@ -152,7 +152,7 @@ class Page
                         <td>" . $employees[$i]->getLastName() . "</td>
                         <td>" . $employees[$i]->getAge() . "</td>
                         <td>" . $employees[$i]->getEmail() . "</td>
-                        <td><a href='App.php?action=delete&user=" . $employees[$i]->getUsername() . "'>Delete</a></td>
+                        <td><a href='index.php?action=delete&user=" . $employees[$i]->getUsername() . "'>Delete</a></td>
                    </tr>";
         }
 
@@ -225,7 +225,7 @@ class Page
                         echo '<td>'.$startDate->format("M-d-D").'</td>';
                         echo '<td>'.$startDate->format("h:i a").'</td>';
                         echo '<td>'.$endDate->format("h:i a").'</td>';
-                        echo "<td><a href='App.php?action=delShift&tab=shift&id=".$shift->getShiftId()."' >Delete</a></td>";
+                        echo "<td><a href='index.php?action=delShift&tab=shift&id=".$shift->getShiftId()."' >Delete</a></td>";
                         echo '</tr>';
                     } catch (Exception $e) {
 
