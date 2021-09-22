@@ -37,5 +37,7 @@ Standard hashing for the passwords stored in the database.
 
 ## Data Layer abstraction
 
+To prevent the website from directly accessing the database, I created an API to send and recieve database data. Tables from the database are mapped to Entity classes.
+
 
 
